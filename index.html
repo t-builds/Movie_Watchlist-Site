@@ -4,10 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" type="image/png" href="images/logo.png" />
     <title>Reel Reptile</title>
   </head>
   <body>
+    <header class="head">
+      <h1>Find Your Film</h1>
+      <h4><a href="watchlist.html">My Watchlist</a></h4>
+    </header>
+
+    <main>
+      <form id="search">
+        <input
+          type="search"
+          id="search-input"
+          class="input-search"
+          placeholder="Anbe Sivam"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div id="xplore">
+        <i class="fa-solid fa-film fa-5x"></i>
+        <p class="sptxt">Start Exploring!</p>
+      </div>
+      <div id="movies-container"></div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
